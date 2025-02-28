@@ -291,6 +291,19 @@
             updateCustomerList();
         }
 
+        // 删除所有客户记录
+function deleteAllCustomers() {
+    if (confirm("您确定要删除所有客户记录吗？")) {
+        // 清空客户数组
+        customers = [];
+
+        // 更新 localStorage 中的数据
+        localStorage.setItem('customers', JSON.stringify(customers));
+
+        // 更新客户列表
+        updateCustomerList();
+    }
+}
         // 筛选数据
         function filterData() {
             const filterDate = document.getElementById('filterDate').value;
