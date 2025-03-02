@@ -185,7 +185,7 @@
             <input type="number" id="shipmentCount" placeholder="发货件数" class="input">
             <input type="date" id="shipmentDate" class="input">
             <button type="submit" class="submit-btn">提交</button>
-            <button type="button" onclick="deleteAllCustomers()" class="submit-btn">删除所有客户</button>
+            
         </form>
 
         <!-- 筛选区域 -->
@@ -193,7 +193,7 @@
             <input type="date" id="filterDate" class="filter-input">
             <button onclick="filterData()" class="filter-btn">筛选</button>
         </div>
-
+        <div><button type="button" onclick="deleteAllCustomers()" class="submit-btn">删除所有客户</button></div>
         <!-- 客户列表 -->
         <table id="customerList" class="customer-list">
             <thead>
