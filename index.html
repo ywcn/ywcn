@@ -1,70 +1,69 @@
 <!DOCTYPE html>
-<html格式朗= “zh”&#62;
+<html lang="zh">
 
-<头&#62;
-<元字符集= UTF-8型&#62;
-<元名称=“视口”内容="width=device-width, initial-scale=1.0"&#62;
-<标题&#62;物流信息登记页面</标题&#62;
-<风格&#62;
-*{
-边缘:0;
-衬垫:0;
-箱体尺寸:边箱;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物流信息登记页面</title>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-身体{
-前家族: 宋体,无衬线;
-背景色：#f4f4f4；
-衬垫:20二甲苯;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
 
-.容器{
-宽度:100%;
-最大宽度:1000二甲苯;
-/* 设置最大宽度 */
-边缘:0汽车;
-}
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            /* 设置最大宽度 */
+            margin: 0 auto;
+        }
 
-.形式,
-.滤波器{
-边缘-底部:20二甲苯;
-显示:弯曲;
-弯曲缠绕:包;
-正当内容:间隔层;
-}
+        .form,
+        .filter {
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-.输入{
-宽度:100%;
-最大宽度:48%;
-/* 控制输入框宽度，使其适配较小屏幕 */
-高度:40二甲苯;
-边缘:5二甲苯0;
-衬垫:010二甲苯;
-边境:1二甲苯固体#ccc；
-边界半径:5二甲苯;
-}
+        .input {
+            width: 100%;
+            max-width: 100%;
+            /* 控制输入框宽度，使其适配较小屏幕 */
+            height: 40px;
+            margin: 5px 0;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-.提交-btn{
-宽度:100%;
-最大宽度:48%;
-/* 控制按钮宽度 */
-高度:40二甲苯;
-背景色：#4CAF50；
-颜色:白色;
-边境:没有人;
-边界半径:5二甲苯;
-光标:指针;
-边缘顶部:10二甲苯;
-}
+        .submit-btn {
+            width: 100%;
+            max-width: 48%;
+            /* 控制按钮宽度 */
+            height: 40px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
 
-.提交-btn:悬停{
-背景色：#45a049；
-}
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
 
-.过滤器输入{
-宽度:100%;
-最大宽度:48%;
-/* 控制筛选输入框的宽度 */
+        .filter-input {
+            width: 100%;
+            max-width: 48%;
+            /* 控制筛选输入框的宽度 */
             height: 40px;
             margin: 5px 0;
             padding: 0 10px;
@@ -164,7 +163,9 @@
             .filter-btn {
                 height: 35px;
             }
-            
+            .iptData{
+            width:100%
+            }
             .customer-list td input {
                 height: 25px;
             }
@@ -183,7 +184,7 @@
         <form id="shippingForm" class="form">
             <input type="text" id="customerName" placeholder="客户姓名" class="input">
             <input type="number" id="shipmentCount" placeholder="发货件数" class="input">
-            <input type="date" id="shipmentDate" class="input">
+            <input type="date" id="shipmentDate" class="input iptData">
             <button type="submit" class="submit-btn">提交</button>
             
         </form>
