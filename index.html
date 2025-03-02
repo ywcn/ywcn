@@ -271,16 +271,16 @@
         }
 
         // 修改发货件数
-        function updateShipmentCount(index, newCount) {
-            if (newCount && !isNaN(newCount)) {
-                customers[index].shipmentCount = parseInt(newCount, 10);
+        //function updateShipmentCount(index, newCount) {
+           // if (newCount && !isNaN(newCount)) {
+                //customers[index].shipmentCount = parseInt(newCount, 10);
 
                 // 更新 localStorage 中的数据
-                localStorage.setItem('customers', JSON.stringify(customers));
+                //localStorage.setItem('customers', JSON.stringify(customers));
 
-                updateCustomerList();
-            }
-        }
+               // updateCustomerList();
+           // }
+       // }
 
         // 删除客户记录
         function deleteCustomer(index) {
